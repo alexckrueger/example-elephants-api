@@ -1,0 +1,38 @@
+### Make an elephant out of thin air ye ye
+
+POST http://localhost:3000/elephants
+Content-Type: application/json
+
+{
+  "name": "I'm not logged in lol",
+  "trunk_size": 0,
+  "breed": "human"
+}
+
+### See all elephants for reference
+
+GET http://localhost:3000/elephants
+
+### See all users for reference
+
+GET http://localhost:3000/users
+
+### Create user
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Danny Boy",
+  "email": "ohdannyboy@aol.com",
+  "password": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "ohdannyboy@aol.com",
+  "password": "password"
+}
